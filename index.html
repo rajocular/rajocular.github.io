@@ -12,32 +12,36 @@
   <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
   <style>
   body {
-      position: relative; 
+      position: relative;
   }
-  .nav-header {padding-top:10px;}
-  #intro {padding-top:50px;height:670px; background-image: url("staticfiles/code.jpeg"); }
-  #section1 {padding-top:50px;height:650px; }
-  #section2 {padding-top:50px;height:650px; }
-  #section3 {padding-top:50px;height:800px; }
-  #section4 {padding-top:50px;height:350px; }
-  #section5 {padding-top:50px;height:300px; background-image: url("staticfiles/animus.jpg"); }
+
+  #intro {
+    background-image: url("staticfiles/code.jpeg");
+    background-repeat:no-repeat;
+    background-position: center;
+  }
+  #section1 {padding-top:50px;height:auto; }
+  #section2 {padding-top:50px;height:auto; }
+  #section3 {padding-top:50px;height:auto; }
+  #section4 {padding-top:50px;height:auto; }
+  #section5 {background-color: black;}
   .my-large-font {font-size: 36px;}
   .my-small-font {font-size: 20px;}
 
 
 	.pipe-transform {
-    -webkit-transition: all 2s ease; 
-	-moz-transition: all 2s ease;  
-	-o-transition: all 2s ease;  
-	-ms-transition: all 2s ease;  
+    -webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	-ms-transition: all 2s ease;
 	transition: all 2s ease;
 	}
 
 	.pipe-transform-active {
-		-webkit-transition: all 10s linear; 
-	-moz-transition: all 10s linear;  
-	-o-transition: all 10s linear;  
-	-ms-transition: all 10s linear;  
+		-webkit-transition: all 10s linear;
+	-moz-transition: all 10s linear;
+	-o-transition: all 10s linear;
+	-ms-transition: all 10s linear;
 	transition: all 10s linear;
 
 
@@ -51,10 +55,10 @@
 	}
 
 	.pipe-transform-inactive {
-		-webkit-transition: all 1s linear; 
-	-moz-transition: all 1s linear;  
-	-o-transition: all 1s linear;  
-	-ms-transition: all 1s linear;  
+		-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	-ms-transition: all 1s linear;
 	transition: all 1s linear;
 
 
@@ -77,56 +81,53 @@
 	}
 
 	.intro-content{
-  margin: 10% auto;
-     width: 1000px;
+     margin:10% auto;
+     width: auto;
      text-align: center;
 	}
+
+  .top-margin{
+    margin-top: 10%;
+  }
+
 
 
 
   </style>
-  
+
 
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid nav-header">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand my-large-font" href="#" style="font-family:Comic Sans MS;">Rajasekaran Manivannan</a>
-    </div>
-    <div>
-      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a class="my-small-font" href="#section1" style="font-family:Comic Sans MS;">SKILLS</a></li>
-          <li><a class="my-small-font" href="#section2" style="font-family:Comic Sans MS;">PORTFOLIO</a></li>
-          <li><a class="my-small-font" href="#section3" style="font-family:Comic Sans MS;">EDUCATION</a></li>
-          <li><a class="my-small-font" href="#section4" style="font-family:Comic Sans MS;">CONTACT</a></li>
-        </ul>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid nav-header">
+      <div>
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a class="my-small-font" href="#section1" style="font-family:Comic Sans MS;">SKILLS</a></li>
+            <li><a class="my-small-font" href="#section2" style="font-family:Comic Sans MS;">PORTFOLIO</a></li>
+            <li><a class="my-small-font" href="#section3" style="font-family:Comic Sans MS;">EDUCATION</a></li>
+            <li><a class="my-small-font" href="#section5" style="font-family:Comic Sans MS;">CONTACT</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</nav>    
+  </nav>
 
-<div id="intro" class="container-fluid">
-	<div class="intro-content my-large-font" style="color: black; font-family: Trebuchet MS; font-size: 80px;">
-	
-	<h1 style="color: black; font-family:Aldrich; font-size: 80px;" data-aos="zoom-in" data-aos-duration="1000">Hi, I'm Raj</h1>
-	<p style="color: black; font-family:Aldrich; font-size: 40px;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">All I know how to make is <strong data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">Code</strong><strong data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000"> & Coffee!</strong></p><br>
+<div id="intro" class="container-fluid" >
+	<div class="intro-content my-large-font" style=" font-family: Trebuchet MS; font-size: 80px;">
+
+	<h1 style="font-family:Aldrich; font-size: 80px;" data-aos="zoom-in" data-aos-duration="1000">Hi, I'm Raj</h1>
+	<p style="font-family:Aldrich; font-size: 40px;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">All I know how to make is <strong data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000">Code</strong><strong data-aos="fade-up" data-aos-duration="1000" data-aos-delay="3000"> & Coffee!</strong></p><br>
 	<div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="5000">
-	<p style="color: black; font-family:Aldrich; font-size: 40px;" >Welcome to my page</p>
-	<p style="color: black; font-family:Aldrich; font-size: 40px;">Scroll down</p>
+	<p style="font-family:Aldrich; font-size: 40px;" >Welcome to my page</p>
+	<p style="font-family:Aldrich; font-size: 40px;">Scroll down</p>
 		<a href="#section1" class="btn btn-circle page-scroll"><i class="glyphicon glyphicon-chevron-down"></i></a>
 	</div></div>
 </div>
 
-<div id="section1" class="container-fluid">
+<div id="section1" class="container-fluid" style="height:90vh">
   <div class="text-center" data-aos="zoom-in" data-aos-duration="1500"><h1>SKILLS</h1></div>
 
   <div class="row" style="margin-top: 2%" >
@@ -138,7 +139,7 @@
 	  	<div class="progress-bar" role="progressbar" style="width:90%; background-color: #a300cc;">
 	    	90%
 	  	</div>
-  	</div>	
+  	</div>
 
   	<div class="progress">
 	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #006600;">
@@ -240,9 +241,14 @@
   	</div>
   </div>
   </div>
+
 </div>
-<div id="section2" class="container-fluid">
-	<div style="text-align: center; margin-top:3%; margin-bottom: 7%;">
+
+<div class="text-center" style="height:10vh">
+<a href="#section2" class="btn btn-circle page-scroll"><i class="glyphicon glyphicon-chevron-down"></i></a>
+</div>
+<div id="section2" class="container-fluid" style="height:90vh">
+	<div class="intro-content" style="text-align: center; margin-top:3%; margin-bottom: 7%;">
 		<h1>PORTFOLIO</h1>
 	</div>
 	<div class="row" style="margin-left: 3%;">
@@ -293,7 +299,7 @@
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	        </div>
 	      </div>
-	      
+
 	    </div>
   </div>
 
@@ -350,7 +356,7 @@
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	        </div>
 	      </div>
-	      
+
 	    </div>
   </div>
 		<div class="row">
@@ -406,19 +412,23 @@
 	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	        </div>
 	      </div>
-	      
+
 	    </div>
   </div>
 	</div>
 </div>
+
 </div>
-<div id="section3" class="container-fluid">
+<div class="text-center" style="height:10vh">
+<a href="#section3" class="btn btn-circle page-scroll"><i class="glyphicon glyphicon-chevron-down"></i></a>
+</div>
+<div id="section3" class="container-fluid" style="height:60vh">
     <div style="text-align: center; margin-bottom: 5%;">
 		<h1>EDUCATION</h1>
 	</div>
   	<div>
-  		<div class="container">
-  			<div class="row" style="margin-left: 15%;">
+  		<div class="container text-center">
+  			<div class="row" style="color: #066F9C;">
   				<div class="col-xs-4" data-aos="fade-left" data-aos-duration="1500"><img class="img-circle img-fluid" src="staticfiles/UWindsor.jpg"></div>
   				<div class="col-xs-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
   						<h2>University of Windsor</h2>
@@ -428,8 +438,8 @@
 		  	</div>
   		</div>
 
-  		<div class="container">
-  			<div class="row" style="margin-left: 15%; margin-top: 5%;">
+  		<div class="container text-center">
+  			<div class="row" style="color: #066F9C;">
   				<div class="col-xs-4" data-aos="fade-left" data-aos-duration="1500" ><img class="img-circle img-fluid" src="staticfiles/SJCE.png"></div>
   				<div class="col-xs-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
   						<h2>St. Joseph's College of Engineering</h2>
@@ -439,23 +449,23 @@
 		  	</div>
   		</div>
   	</div>
-
-	
-
-
 </div>
 
-<div id="section4" class="container-fluid">
-	<div class="text-center" data-aos="zoom-in-up" data-aos-duration="1500"><h4>Feel free to look at my Resume</h4></div>
-	<div class="row text-center" style="margin-top: 4%;">
-		<div class="col-sm-12">
-			<a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/resume.pdf" target="_blank"><i class="btn btn-info glyphicon glyphicon-print" style="width: 200px;" data-aos="zoom-out" data-aos-duration="1500"  data-aos-delay="1000">&nbsp;View/Print</i></a>
-		</div>
-	</div>
+<div id="section4" class="container-fluid" style="height:30vh">
+  <div class="text-center" data-aos="zoom-in-up" data-aos-duration="1500"><h1>Feel free to look at my Resume</h1></div>
+  <div class="row text-center">
+    <div class="col-sm-12">
+      <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/resume.pdf" target="_blank"><i class="btn btn-info glyphicon glyphicon-print" style="width: 200px;" data-aos="zoom-out" data-aos-duration="1500"  data-aos-delay="1000">&nbsp;View/Print</i></a>
+    </div>
+  </div>
+</div>
+<div class="text-center" style="height:10vh">
+<a href="#section5" class="btn btn-circle page-scroll"><i class="glyphicon glyphicon-chevron-down"></i></a>
 </div>
 
-<div id="section5" class="container-fluid">
-	<h3 class="text-center" data-aos="fade-up" data-aos-duration="1500">CONTACT</h3>
+
+<div id="section5" class="container-fluid" style="height:30vh">
+	<h3 class="text-center" data-aos="fade-up" data-aos-duration="1500" style="color:#066F9C">CONTACT</h3>
 	<br>
 	<div class="row text-center">
 		<div class="col-lg-6" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="1000">
@@ -475,7 +485,7 @@
 	<div class="row">
 		<div class="text-center">
 	        	<a class="link" href="https://www.linkedin.com/in/rajasekaran-manivannan/" target="_blank"><i class="btn btn-info fab fa-linkedin" ></i></a>
-	        	<a class="link" href="https://github.com/rajocular" target="_blank"><i class="btn fab fa-github" style="background-color: black; margin-left: 3%;"></i></a>
+	        	<a class="link" href="https://github.com/rajocular" target="_blank"><i class="btn btn-info fab fa-github" style="background-color: black; margin-left: 3%;"></i></a>
 		</div>
 	</div>
 </div>
@@ -488,8 +498,8 @@
   .click(function(event) {
     // On-page links
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
@@ -504,14 +514,6 @@
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
         });
       }
     }
