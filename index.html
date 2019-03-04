@@ -18,7 +18,10 @@
   #intro {
     background-image: url("staticfiles/code.jpeg");
     background-repeat:no-repeat;
-    background-position: center;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover
   }
   #section1 {padding-top:50px;height:auto; }
   #section2 {padding-top:50px;height:auto; }
@@ -86,10 +89,11 @@
      text-align: center;
 	}
 
-  .top-margin{
-    margin-top: 10%;
-  }
 
+  .img-responsive {
+  max-width: 100%;
+  height: auto;
+  }
 
 
 
@@ -100,22 +104,8 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid nav-header">
-      <div>
-        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a class="my-small-font" href="#section1" style="font-family:Comic Sans MS;">SKILLS</a></li>
-            <li><a class="my-small-font" href="#section2" style="font-family:Comic Sans MS;">PORTFOLIO</a></li>
-            <li><a class="my-small-font" href="#section3" style="font-family:Comic Sans MS;">EDUCATION</a></li>
-            <li><a class="my-small-font" href="#section5" style="font-family:Comic Sans MS;">CONTACT</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
 
-<div id="intro" class="container-fluid" >
+<div id="intro" class="container-fluid" style="height:100vh;">
 	<div class="intro-content my-large-font" style=" font-family: Trebuchet MS; font-size: 80px;">
 
 	<h1 style="font-family:Aldrich; font-size: 80px;" data-aos="zoom-in" data-aos-duration="1000">Hi, I'm Raj</h1>
@@ -127,115 +117,115 @@
 	</div></div>
 </div>
 
-<div id="section1" class="container-fluid" style="height:90vh">
+<div id="section1" class="container-fluid" style="height:100%">
   <div class="text-center" data-aos="zoom-in" data-aos-duration="1500"><h1>SKILLS</h1></div>
 
   <div class="row" style="margin-top: 2%" >
   	<div class="col-lg-12" data-aos="fade-right" data-aos-duration="1500">
   	<div class="progress" >
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #660080;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #660080;">
 	    	Python
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:90%; background-color: #a300cc;">
+	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #a300cc;">
 	    	90%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #006600;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #006600;">
 	    	Java
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #00b300;">
+	  	<div class="progress-bar" role="progressbar" style="width:70%; background-color: #00b300;">
 	    	80%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #000099;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #000099;">
 	    	HTML
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:95%; background-color: #1a1aff;">
+	  	<div class="progress-bar" role="progressbar" style="width:85%; background-color: #1a1aff;">
 	    	95%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #804d00;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #804d00;">
 	    	CSS
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:90%; background-color: #cc7a00;">
+	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #cc7a00;">
 	    	90%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #000000;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #000000;">
 	    	Bootstrap
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:70%; background-color: #333300;">
+	  	<div class="progress-bar" role="progressbar" style="width:60%; background-color: #333300;">
 	    	70%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #ff0066;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #ff0066;">
 	    	Javascript
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #ff66a3;">
+	  	<div class="progress-bar" role="progressbar" style="width:70%; background-color: #ff66a3;">
 	    	80%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #8a00e6;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #8a00e6;">
 	    	ReactJs
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:75%; background-color: #b84dff;">
+	  	<div class="progress-bar" role="progressbar" style="width:65%; background-color: #b84dff;">
 	    	75%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #e62e00;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #e62e00;">
 	    	Django
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:85%; background-color: #ff5c33;">
+	  	<div class="progress-bar" role="progressbar" style="width:75%; background-color: #ff5c33;">
 	    	85%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #00b3b3;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #00b3b3;">
 	    	C
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:90%; background-color: #00e6e6;">
+	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #00e6e6;">
 	    	90%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #00e600;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #00e600;">
 	    	C++
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #1aff1a;">
+	  	<div class="progress-bar" role="progressbar" style="width:70%; background-color: #1aff1a;">
 	    	80%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #0073e6;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #0073e6;">
 	    	SQL
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:95%; background-color: #66b3ff;">
+	  	<div class="progress-bar" role="progressbar" style="width:85%; background-color: #66b3ff;">
 	    	95%
 	  	</div>
   	</div>
 
   	<div class="progress">
-	  	<div class="progress-bar" role="progressbar" style="width:5%; background-color: #ff4000;">
+	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #ff4000;">
 	    	GIT
 	  	</div>
-	  	<div class="progress-bar" role="progressbar" style="width:90%; background-color: #ff8c66;">
+	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #ff8c66;">
 	    	90%
 	  	</div>
   	</div>
@@ -244,10 +234,7 @@
 
 </div>
 
-<div class="text-center" style="height:10vh">
-<a href="#section2" class="btn btn-circle page-scroll"><i class="glyphicon glyphicon-chevron-down"></i></a>
-</div>
-<div id="section2" class="container-fluid" style="height:90vh">
+<div id="section2" class="container-fluid" style="height:100%">
 	<div class="intro-content" style="text-align: center; margin-top:3%; margin-bottom: 7%;">
 		<h1>PORTFOLIO</h1>
 	</div>
@@ -419,39 +406,31 @@
 </div>
 
 </div>
-<div class="text-center" style="height:10vh">
-<a href="#section3" class="btn btn-circle page-scroll"><i class="glyphicon glyphicon-chevron-down"></i></a>
-</div>
-<div id="section3" class="container-fluid" style="height:60vh">
+<div id="section3" class="container-fluid" style="height:100%">
     <div style="text-align: center; margin-bottom: 5%;">
 		<h1>EDUCATION</h1>
 	</div>
-  	<div>
   		<div class="container text-center">
-  			<div class="row" style="color: #066F9C;">
-  				<div class="col-xs-4" data-aos="fade-left" data-aos-duration="1500"><img class="img-circle img-fluid" src="staticfiles/UWindsor.jpg"></div>
-  				<div class="col-xs-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
+  			<div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" style="color: #066F9C;">
+  				<div class="col-xs-4" ><img class="img-responsive img-circle img-fluid" src="staticfiles/UWindsor.jpg"></div>
+  				<div class="col-xs-4" >
   						<h2>University of Windsor</h2>
 		  				<h6>Master of Applied Computing</h6>
 		  				<p>Sep 2017 - Dec 2018</p>
 		  		</div>
 		  	</div>
-  		</div>
-
-  		<div class="container text-center">
-  			<div class="row" style="color: #066F9C;">
-  				<div class="col-xs-4" data-aos="fade-left" data-aos-duration="1500" ><img class="img-circle img-fluid" src="staticfiles/SJCE.png"></div>
-  				<div class="col-xs-4" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000">
+  			<div class="row" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1000" style="color: #066F9C;">
+  				<div class="col-xs-4"><img class="img-responsive img-circle img-fluid" src="staticfiles/SJCE.png"></div>
+  				<div class="col-xs-4">
   						<h2>St. Joseph's College of Engineering</h2>
 		  				<h6>Bachelor of Engineering in Computer Science and Engineering</h6>
 		  				<p>Sep 2013 - May 2017</p>
 		  		</div>
 		  	</div>
   		</div>
-  	</div>
 </div>
 
-<div id="section4" class="container-fluid" style="height:30vh">
+<div id="section4" class="container-fluid" style="height:100%">
   <div class="text-center" data-aos="zoom-in-up" data-aos-duration="1500"><h1>Feel free to look at my Resume</h1></div>
   <div class="row text-center">
     <div class="col-sm-12">
@@ -459,22 +438,19 @@
     </div>
   </div>
 </div>
-<div class="text-center" style="height:10vh">
-<a href="#section5" class="btn btn-circle page-scroll"><i class="glyphicon glyphicon-chevron-down"></i></a>
-</div>
 
-
-<div id="section5" class="container-fluid" style="height:30vh">
+<br>
+<div id="section5" class="container-fluid" >
 	<h3 class="text-center" data-aos="fade-up" data-aos-duration="1500" style="color:#066F9C">CONTACT</h3>
 	<br>
 	<div class="row text-center">
-		<div class="col-lg-6" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="1000">
+		<div class="col-lg-6">
 			<a href="mailto:manivanr@uwindsor.ca">
 			<button type="button" class="btn btn-default btn-sm">
           		<span class="glyphicon glyphicon-envelope"></span> manivanr@uwindsor.ca
         	</button></a>
 		</div>
-		<div class="col-lg-6" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-delay="1000">
+		<div class="col-lg-6">
 			<a href="tel:+15199816630">
 			<button type="button" class="btn btn-default btn-sm">
           		<span class="glyphicon glyphicon-earphone"></span> +1 (519) 981 6630
@@ -490,35 +466,7 @@
 	</div>
 </div>
 
-	<script>
-		$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-        });
-      }
-    }
-  });
-	</script>
+
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
