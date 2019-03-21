@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -16,6 +17,7 @@
       body {
           scroll-snap-type: y mandatory;
           overflow-y: scroll;
+          font-family: fantasy;
       }
 
       .one{
@@ -24,6 +26,7 @@
         height:100vh;
         scroll-snap-align:start;
         display: grid;
+        font-family: chalkduster, fantasy;
       }
       .parallax {
 
@@ -34,7 +37,7 @@
       }
 
       .one .margin{
-        margin:auto;
+      margin: 10% auto 0 auto;
       }
 
       .two{
@@ -52,9 +55,16 @@
         background-image: url("staticfiles/background4.jpg");
         height:100vh;
         scroll-snap-align:start;
-        display: grid;
+        display:grid;
 
       }
+
+      .four .margin{
+        margin: 10% auto 0 auto;
+      }
+
+
+
 
       .five{
         text-align: center;
@@ -71,10 +81,12 @@
         margin-bottom: 2%;
       }
 
-
+      .medium-font{
+        font-size: 5em;
+      }
 
       .border {
-        border: 1px solid blue;
+        border: 3px solid red;
       }
 
       .skill-mobile-view{
@@ -90,17 +102,110 @@
           display: grid;
         }
       }
+      .arrow-bounce {
+      	-moz-animation: bounce 3s infinite;
+      	-webkit-animation: bounce 3s infinite;
+      	animation: bounce 3s infinite;
+      }
+      @-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -moz-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+      @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+          -ms-transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+          -ms-transform: translateY(-15px);
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
 
     </style>
   </head>
   <body>
-    <div class="one parallax">
+    <div class="one parallax ">
       <div class="margin">
         <h1>Hi, I'm Raj</h1>
-      	<p>All I know how to make is Code & Coffee!</p>
+      	<p>I am a<span class="typewrite" data-period="1000" data-type='[ " Passionate Learner", "n Innovative thinker", " Web developer"]'></span> </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <p>Feel free to look at my resume</p>
+            <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button type="button" name="button" class="btn btn-dark btn-lg">&nbsp;Resume</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="mailto:manivanr@uwindsor.ca">
+              <img src="https://img.icons8.com/bubbles/100/000000/gmail.png">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="link" href="https://www.linkedin.com/in/rajasekaran-manivannan/" target="_blank">
+              <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png">
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <a href="tel:+15199816630">
+              <img src="https://img.icons8.com/bubbles/100/000000/phone.png">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="link" href="https://github.com/rajocular" target="_blank">
+              <img src="https://img.icons8.com/color/96/000000/github.png">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="container medium-font">
+        <p class="arrow-bounce"> v </p>
+
       </div>
     </div>
-    <div class="two">
+    <div id="skills" class="two">
         <div class="container margin-bottom">
           <h1>SKILLS</h1>
         </div>
@@ -407,10 +512,10 @@
         						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:50%">
         						    Java
         						  </div>
-        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:40%">
+        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:35%">
         						    HTML
         						  </div>
-        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:10%">
+        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
         						    Bootstrap
         						  </div>
         					  </div>
@@ -456,10 +561,10 @@
         						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
         						    Python Django
         						  </div>
-        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%">
+        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
         						    SQLite
         						  </div>
-        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:10%">
+        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
         						    Bootstrap
         						  </div>
         					  </div>
@@ -508,10 +613,10 @@
         						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
         						    Python Django
         						  </div>
-        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:20%">
+        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
         						    SQLite
         						  </div>
-        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:10%">
+        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
         						    Bootstrap
         						  </div>
         					  </div>
@@ -554,67 +659,30 @@
       </div>
 
       <div class="four parallax">
-        <h3>EDUCATION</h3>
-        <div class="margin">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 ">
-                <img class="img-responsive img-fluid" src="staticfiles/Uwindsor_logo.png" style="margin: 0 auto">
-                <h2>University of Windsor</h2>
-  		  				<h6>Master of Applied Computing</h6>
-  		  				<p>Sep 2017 - Dec 2018</p>
+
+          <div class="margin">
+            <h2>EDUCATION</h2>
+            <div class="container margin">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <img class="img-responsive img-fluid" src="staticfiles/Uwindsor_logo.png" style="margin: 0 auto">
+                  <h2>University of Windsor</h2>
+    		  				<h6>Master of Applied Computing</h6>
+    		  				<p>Sep 2017 - Dec 2018</p>
+                </div>
+                <div class="col-md-6 ">
+                  <img class="img-responsive img-circle img-fluid" src="staticfiles/SJCE.png" style="margin: 0 auto">
+                  <h2>St. Joseph's College of Engineering</h2>
+    		  				<h6>Bachelor of Engineering in Computer Science and Engineering</h6>
+    		  				<p>Sep 2013 - May 2017</p>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12 ">
-                <img class="img-responsive img-circle img-fluid" src="staticfiles/SJCE.png" style="margin: 0 auto">
-                <h2>St. Joseph's College of Engineering</h2>
-  		  				<h6>Bachelor of Engineering in Computer Science and Engineering</h6>
-  		  				<p>Sep 2013 - May 2017</p>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="five parallax">
-        <div class="text-center"><h1>Feel free to look at my Resume</h1></div>
-        <div class="row text-center">
-          <div class="col-sm-12">
-            <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button type="button" name="button" class="btn btn-dark btn-lg">&nbsp;View/Print</button></a>
           </div>
         </div>
-          <h3>CONTACT</h3>
-          <div class="row">
-            <div class="col-lg-6">
-              <a href="mailto:manivanr@uwindsor.ca">
-                <img src="https://img.icons8.com/bubbles/100/000000/gmail.png">
-              </a>
-            </div>
-            <div class="col-lg-6">
-              <a class="link" href="https://www.linkedin.com/in/rajasekaran-manivannan/" target="_blank">
-                <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png">
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-6">
-              <a href="tel:+15199816630">
-                <img src="https://img.icons8.com/bubbles/100/000000/phone.png">
-              </a>
-            </div>
-            <div class="col-lg-6">
-              <a class="link" href="https://github.com/rajocular" target="_blank">
-                <img src="https://img.icons8.com/color/96/000000/github.png">
-              </a>
-            </div>
-
-          </div>
 
       </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -622,6 +690,65 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript">
+        var TxtType = function(el, toRotate, period) {
+          this.toRotate = toRotate;
+          this.el = el;
+          this.loopNum = 0;
+          this.period = parseInt(period, 10) || 2000;
+          this.txt = '';
+          this.tick();
+          this.isDeleting = false;
+      };
+
+      TxtType.prototype.tick = function() {
+          var i = this.loopNum % this.toRotate.length;
+          var fullTxt = this.toRotate[i];
+
+          if (this.isDeleting) {
+          this.txt = fullTxt.substring(0, this.txt.length - 1);
+          } else {
+          this.txt = fullTxt.substring(0, this.txt.length + 1);
+          }
+
+          this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+          var that = this;
+          var delta = 200 - Math.random() * 100;
+
+          if (this.isDeleting) { delta /= 2; }
+
+          if (!this.isDeleting && this.txt === fullTxt) {
+          delta = this.period;
+          this.isDeleting = true;
+          } else if (this.isDeleting && this.txt === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+          }
+
+          setTimeout(function() {
+          that.tick();
+          }, delta);
+      };
+
+      window.onload = function() {
+          var elements = document.getElementsByClassName('typewrite');
+          for (var i=0; i<elements.length; i++) {
+              var toRotate = elements[i].getAttribute('data-type');
+              var period = elements[i].getAttribute('data-period');
+              if (toRotate) {
+                new TxtType(elements[i], JSON.parse(toRotate), period);
+              }
+          }
+          // INJECT CSS
+          var css = document.createElement("style");
+          css.type = "text/css";
+          css.innerHTML = ".typewrite > .wrap { border-right: 2px solid #1CD7D7}";
+          document.body.appendChild(css);
+      };
+
+
+
       var images = document.querySelectorAll(".skill");
 
       for(var i =0;i<images.length; i++){
