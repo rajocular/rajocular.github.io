@@ -94,6 +94,14 @@
         overflow-y: scroll;
         }
 
+        .resume-home{
+          display: none;
+        }
+
+        .resume-nav{
+          display: inline;
+        }
+
       }
 
       @media screen and (max-width: 768px){
@@ -107,6 +115,14 @@
 
         .four{
           background-image: url("staticfiles/background5.jpg");
+        }
+
+        .resume-nav{
+          display: none;
+        }
+
+        .resume-home{
+          display: inline;
         }
       }
       .arrow-bounce {
@@ -170,7 +186,7 @@
       <div class="container-fluid navbar-nav">
           <br>
          <div class="row">
-           <div class="col">
+           <div class="col resume-nav" >
              <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button class="btn btn-dark btn-lg my-button">&nbsp;Resume</button></a>
            </div>
            <div class="col">
@@ -215,6 +231,9 @@
               </blockquote>
               <br>
             </div>
+          </div>
+          <div class="row resume-home">
+            <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button class="btn btn-dark btn-lg my-button">&nbsp;Resume</button></a>
           </div>
 
 
