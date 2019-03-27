@@ -21,7 +21,7 @@
       }
 
       .one{
-        background-image: url("staticfiles/background1.jpg");
+        background-image: url("staticfiles/background6.jpg");
         text-align: center;
         height:100vh;
         scroll-snap-align:start;
@@ -47,6 +47,7 @@
         scroll-snap-align:start;
       }
       .three{
+        height:100vh;
         scroll-snap-align: start;
       }
 
@@ -64,15 +65,6 @@
       }
 
 
-
-
-      .five{
-        text-align: center;
-        height:100vh;
-        scroll-snap-align:start;
-        display: grid;
-      }
-
       .margin{
         place-items: center;
       }
@@ -86,11 +78,15 @@
       }
 
       .border {
-        border: 3px solid red;
+        border: 3px solid blue;
       }
 
       .mobile-view{
         display: none;
+      }
+
+      .my-button:hover{
+        color: white;
       }
 
       @media screen and (min-width: 768px){
@@ -172,50 +168,69 @@
   </head>
   <body>
     <div class="one parallax ">
-      <div class="margin">
-        <h1>Hi, I'm Raj</h1>
-      	<p>I am a<span class="typewrite" data-period="1000" data-type='[ " Passionate Learner", "n Innovative thinker", " Web developer"]'></span> </p>
+      <div class="container-fluid navbar-nav">
+          <br>
+         <div class="row">
+           <div class="col" style="float:left;">
+             <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button class="btn btn-dark btn-lg my-button">&nbsp;Resume</button></a>
+           </div>
+           <div class="col">
+             <a href="mailto:manivanr@uwindsor.ca">
+               <img src="https://img.icons8.com/bubbles/50/000000/gmail.png">
+             </a>
+           </div>
+           <div class="col">
+             <a class="link" href="https://www.linkedin.com/in/rajasekaran-manivannan/" target="_blank">
+               <img src="https://img.icons8.com/bubbles/50/000000/linkedin.png">
+             </a>
+           </div>
+           <div class="col">
+             <a href="tel:+15199816630">
+               <img src="https://img.icons8.com/bubbles/50/000000/phone.png">
+             </a>
+           </div>
+           <div class="col">
+             <a class="link" href="https://github.com/rajocular" target="_blank">
+               <img src="https://img.icons8.com/color/48/000000/github.png">
+             </a>
+           </div>
+         </div>
+      </div>
+
+      <div class="container ">
+        <div class="margn">
+
+          <div class="row">
+            <div class="col-lg-12">
+            <h1>Hi, I'm Raj</h1>
+            <p>I am a<span class="typewrite" data-period="1000" data-type='[ " Passionate Learner", "n Innovative thinker", " Web developer"]'></span> </p>
+            </div>
+           </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <blockquote class="blockquote" style="border:none; font-family: Comic sans;">
+                <p  style="font-size: 2em">
+                  Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.
+                </p>
+                <footer class="blockquote-footer"  style="font-size: 2em">Bill Gates, <cite title="Source Title">Microsoft</cite></footer>
+              </blockquote>
+              <br>
+            </div>
+          </div>
+
+
+        </div>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <p>Feel free to look at my resume</p>
-            <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button type="button" name="button" class="btn btn-dark btn-lg">&nbsp;Resume</button></a>
+          <div class="col-lg-12">
+          <p style="font-size: 2em">Scroll down</p>
+          <p class="arrow-bounce medium-font"> v </p>
           </div>
         </div>
       </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <a href="mailto:manivanr@uwindsor.ca">
-              <img src="https://img.icons8.com/bubbles/100/000000/gmail.png">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="link" href="https://www.linkedin.com/in/rajasekaran-manivannan/" target="_blank">
-              <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png">
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <a href="tel:+15199816630">
-              <img src="https://img.icons8.com/bubbles/100/000000/phone.png">
-            </a>
-          </div>
-          <div class="col-lg-6">
-            <a class="link" href="https://github.com/rajocular" target="_blank">
-              <img src="https://img.icons8.com/color/96/000000/github.png">
-            </a>
-          </div>
 
-        </div>
-      </div>
-      <div class="container medium-font">
-        <p class="arrow-bounce"> v </p>
-
-      </div>
     </div>
     <div id="skills" class="two">
         <div class="container margin-bottom">
@@ -495,8 +510,8 @@
 
       </div>
 
-
-      <div class="bd-example three">
+      <div class="three">
+      <div class="bd-example">
         <h2 class="mobile-view margin">PROJECTS</h2>
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -676,6 +691,7 @@
           </a>
         </div>
       </div>
+    </div>
 
       <div class="four parallax">
 
