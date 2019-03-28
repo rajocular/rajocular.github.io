@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -20,8 +21,12 @@
           font-family: fantasy;
       }
 
+      td{
+        color: #778899;
+      }
+
       .one{
-        background-image: url("staticfiles/background6.jpg");
+        background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background6.jpg");
         text-align: center;
         height:100vh;
         scroll-snap-align:start;
@@ -41,18 +46,23 @@
       }
 
       .two{
-        text-align: center;
-        background-image: url("staticfiles/hammer.jpg");
+        background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background.jpg");
         height:100vh;
         scroll-snap-align:start;
+        color: #708090;
       }
       .three{
+        height: 100vh;
         scroll-snap-align: start;
       }
+      .three .margin{
+        margin: 5% auto 0 auto;
+      }
+
 
       .four{
         text-align: center;
-        background-image: url("staticfiles/background4.jpg");
+        background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background4.jpg");
         height:100vh;
         scroll-snap-align:start;
         display:grid;
@@ -114,7 +124,15 @@
         }
 
         .four{
-          background-image: url("staticfiles/background5.jpg");
+          background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background5.jpg");
+        }
+
+        .two{
+          height: auto;
+        }
+
+        .three{
+          height: auto;
         }
 
         .resume-nav{
@@ -126,9 +144,9 @@
         }
       }
       .arrow-bounce {
-      	-moz-animation: bounce 3s infinite;
-      	-webkit-animation: bounce 3s infinite;
-      	animation: bounce 3s infinite;
+        -moz-animation: bounce 3s infinite;
+        -webkit-animation: bounce 3s infinite;
+        animation: bounce 3s infinite;
       }
       @-moz-keyframes bounce {
         0%, 20%, 50%, 80%, 100% {
@@ -251,488 +269,400 @@
 
     </div>
     <div id="skills" class="two">
-        <div class="container margin-bottom">
+        <div class="container text-center margin-bottom">
           <h1>SKILLS</h1>
         </div>
-        <div class="container-fluid image">
-          <div class="container-fluid">
-
-            <div id="programming" class="row margin-bottom">
-              <div class="col-sm-3">
-                <h3>PROGRAMMING</h3>
-              </div>
-              <div id="python" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/python.png" style="display:inline">
-                <img class="second "src="https://img.icons8.com/color/96/000000/python.png" style="display:none">
-              </div>
-              <div id="java" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo.png" style="display: inline">
-                <img class="second" class="first" src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" style="display: none">
-              </div>
-              <div id="c" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/c-programming.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/c-programming.png" style="display: none">
-              </div>
-              <div id="cpp" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" style="display: none">
-              </div>
-              <div id="html" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/html-5.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/html-5.png" style="display: none">
-              </div>
-              <div id="css" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/css3.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/css3.png" style="display: none">
-              </div>
-              <div id="js" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/javascript.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/javascript.png" style="display: none">
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="container-fluid">
-
-            <div id="frameworks" class="row margin-bottom">
-              <div class="col-sm-3">
-                <h3>FRAMEWORKS</h3>
-              </div>
-              <div id="django" class="skill col-sm-1">
-                <img class="first" src="icons/48/django.png" style="display: inline">
-                <img class="second" src="icons/96/django.png" style="display: none">
-              </div>
-              <div id="bootstrap" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/bootstrap.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/bootstrap.png" style="display: none">
-              </div>
-              <div id="reactnative" class="skill col-sm-1">
-                <img class="first" src="icons/48/reactnative.png" style="display: inline">
-                <img class="second" src="icons/96/reactnative.png" style="display: none">
-              </div>
-              <div id="selenium" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/selenium-test-automation.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/selenium-test-automation.png" style="display: none">
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="container-fluid">
-
-            <div id="libraries" class="row margin-bottom">
-              <div class="col-sm-3">
-                <h3>LIBRARIES</h3>
-              </div>
-              <div id="react" class="skill col-sm-1">
-                <img class="first" src="icons/48/react.png" style="display: inline">
-                <img class="second" src="icons/96/react.png" style="display: none">
-              </div>
-              <div id="redux" class="skill col-sm-1">
-                <img class="first" src="icons/48/redux.png" style="display: inline">
-                <img class="second" src="icons/96/redux.png" style="display: none">
-              </div>
-              <div id="jsoup" class="skill col-sm-1">
-                <img class="first" src="icons/48/jsoup.png" style="display: inline">
-                <img class="second" src="icons/96/jsoup.png" style="display: none">
-              </div>
-              </div>
-          </div>
-          <div id="vcs" class="container-fluid">
-            <div class="row margin-bottom">
-              <div class="col-sm-3">
-                <h3>VCS</h3>
-              </div>
-              <div id="git" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/git.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/git.png" style="display: none">
-              </div>
-            </div>
-          </div>
-          <div id="databases" class="container-fluid">
-            <div class="row margin-bottom">
-              <div class="col-sm-3">
-                <h3>DATABASES</h3>
-              </div>
-              <div id="mysql" class="skill col-sm-1">
-                <img class="first" src="icons/48/mysql.jpg" style="display: inline">
-                <img class="second" src="icons/96/mysql.jpg" style="display: none">
-              </div>
-              <div id="sqlite" class="skill col-sm-1">
-                <img class="first" src="icons/48/sqlite.png" style="display: inline">
-                <img class="second" src="icons/96/sqlite.png" style="display: none">
-              </div>
-              <div id="oracle" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/oracle-logo.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/oracle-logo.png" style="display: none">
-              </div>
-            </div>
-          </div>
-          <div id="os" class="container-fluid">
-            <div class="row margin-bottom">
-              <div class="col-sm-3">
-                <h3>OS</h3>
-              </div>
-              <div id="windows" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/windows-10.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/windows-10.png" style="display: none">
-              </div>
-              <div id="linux" class="skill col-sm-1">
-                <img class="first" src="https://img.icons8.com/color/48/000000/linux.png" style="display: inline">
-                <img class="second" src="https://img.icons8.com/color/96/000000/linux.png" style="display: none">
-              </div>
-              <div id="macos" class="skill col-sm-1">
-                <img class="first" src="icons/48/macos.png" style="display: inline">
-                <img class="second" src="icons/96/macos.png" style="display: none">
-              </div>
-            </div>
-          </div>
-          <div id="cloud" class="container-fluid">
-            <div class="row margin-bottom">
-              <div class="col-sm-3">
-                <h3>CLOUD</h3>
-              </div>
-              <div id="bluemix" class="skill col-sm-1">
-                <img class="first" src="icons/48/bluemix.jpg" style="display: inline">
-                <img class="second" src="icons/96/bluemix.jpg" style="display: none">
-              </div>
-              <div id="aws" class="skill col-sm-1">
-                <img class="first" src="icons/48/aws.png" style="display: inline">
-                <img class="second" src="icons/96/aws.png" style="display: none">
-              </div>
-            </div>
-          </div>
-
-      </div>
-
-      <div class="container-fluid mobile-view">
-
-        <div class="row" style="margin-top:20%;" >
-        	<div class="col-lg-12">
-        	<div class="progress" >
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #660080;">
-      	    	Python
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #a300cc;">
-      	    	90%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #006600;">
-      	    	Java
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:70%; background-color: #00b300;">
-      	    	80%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #000099;">
-      	    	HTML
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:85%; background-color: #1a1aff;">
-      	    	95%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #804d00;">
-      	    	CSS
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #cc7a00;">
-      	    	90%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #000000;">
-      	    	Bootstrap
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:60%; background-color: #333300;">
-      	    	70%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #ff0066;">
-      	    	Javascript
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:70%; background-color: #ff66a3;">
-      	    	80%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #8a00e6;">
-      	    	ReactJs
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:65%; background-color: #b84dff;">
-      	    	75%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #e62e00;">
-      	    	Django
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:75%; background-color: #ff5c33;">
-      	    	85%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #00b3b3;">
-      	    	C
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #00e6e6;">
-      	    	90%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #00e600;">
-      	    	C++
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:70%; background-color: #1aff1a;">
-      	    	80%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #0073e6;">
-      	    	SQL
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:85%; background-color: #66b3ff;">
-      	    	95%
-      	  	</div>
-        	</div>
-
-        	<div class="progress">
-      	  	<div class="progress-bar" role="progressbar" style="width:10%; background-color: #ff4000;">
-      	    	GIT
-      	  	</div>
-      	  	<div class="progress-bar" role="progressbar" style="width:80%; background-color: #ff8c66;">
-      	    	90%
-      	  	</div>
-        	</div>
+        <div class ="table-responsive image">
+          <table class="table">
+            <thead class="thead-dark text-center table-borderless">
+              <tr>
+                <th scope="col">PROGRAMMING</th>
+                <th scope="col">FRAMEWORKS</th>
+                <th scope="col">LIBRARIES</th>
+                <th scope="col">DATABASES</th>
+                <th scope="col">CLOUD</th>
+                <th scope="col">OS</th>
+                <th scope="col">VCS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Python</h2>
+                  <h2>Java</h2>
+                  <h2>C</h2>
+                  <h2>C++</h2>
+                  <h2>HTML</h2>
+                  <h2>CSS</h2>
+                  <h2>JavaScript</h2>
+                  <h2>TypeScript</h2>
+                  <h2>ShellScript</h2>
+                </td>
+                <td>
+                  <h2>Angular</h2>
+                  <h2>React</h2>
+                  <h2>Django</h2>
+                  <h2>Bootstrap</h2>
+                  <h2>React Native</h2>
+                </td>
+                <td>
+                  <h2>Redux</h2>
+                  <h2>RxJS</h2>
+                  <h2>Jsoup</h2>
+                  <h2>Beautiful Soup</h2>
+                </td>
+                <td>
+                  <h2>MySQL</h2>
+                  <h2>SQLite</h2>
+                  <h2>Oracle</h2>
+                </td>
+                <td>
+                  <h2>Amazon aws</h2>
+                  <h2>IBM Bluemix</h2>
+                </td>
+                <td>
+                  <h2>Windows</h2>
+                  <h2>Linux</h2>
+                  <h2>MacOS</h2>
+                </td>
+                <td>
+                  <h2>Git</h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+        <div class="container-fluid mobile-view">
+          <div class="row " >
+            <div class="col-lg-12">
+              <h4>Programming</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                  Python
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                  Java
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                  C
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                  C++
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                  HTML
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                  CSS
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                  JS
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                  TS
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                  ShellScript
+                </div>
+              </div>
+
+              <h4>Frameworks</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                  Angular
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                  React
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                  Django
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                  Bootstrap
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                  React Native
+                </div>
+              </div>
+
+              <h4>libraries</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:25%; ">
+                  Redux
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:25%; ">
+                  RxJs
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:25%; ">
+                  JSoup
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:25%; ">
+                  Beautiful Soup
+                </div>
+              </div>
+
+              <h4>Databases</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                  MySQL
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                  Oracle
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                  SQLite
+                </div>
+              </div>
+
+              <h4>OS</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                  Windows
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                  Linux
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                  MacOS
+                </div>
+              </div>
+
+              <h4>Version Control System</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:100%; ">
+                  GIT
+                </div>
+              </div>
+
+              <h4>CLOUD</h4>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:50%;">
+                  Amazon AWS
+                </div>
+                <div class="progress-bar" role="progressbar" style="width:50%;">
+                  IBM Bluemix
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </div>
-
-
-
       </div>
 
       <div class="three">
-      <div class="bd-example">
-        <h2 class="mobile-view margin">PROJECTS</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <a data-target="#Modal_1" data-toggle="modal" style="cursor:pointer;">
-            <div class="carousel-item active">
-              <img src="staticfiles/searchengine.PNG" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <a data-target="#Modal_1" data-toggle="modal" style="cursor:pointer;"><h2>Search Engine</h2></a>
-                <p>click on the project name to view in detail</p>
-              </div>
+        <h2 class="text-center margin">PROJECTS</h2>
+        <div class="container margin">
+          <div class="row align-items-center">
+            <div class="col">
+              <a data-target="#Modal_1" data-toggle="modal" >
+                <img class="img-responsive rounded" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/progress.jpg">
+                <p class="text-center">Track Progress</p>
+              </a>
             </div>
-          </a>
             <div class="modal fade" id="Modal_1" role="dialog">
-        	    <div class="modal-dialog">
-        	      <div class="modal-content">
-        	        <div class="modal-header">
-                    <h4 class="modal-title">Search Engine</h4>
-        	        </div>
-        	        <div class="modal-body">
-        	        	<div>
-        	          		<h3>Technologies</h3>
-        			          <div class="progress">
-        						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:50%">
-        						    Java
-        						  </div>
-        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:35%">
-        						    HTML
-        						  </div>
-        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
-        						    Bootstrap
-        						  </div>
-        					  </div>
-        			    </div>
-
-        	          <ul>
-        	          	<li>Developed a simple version of search engine using Java that runs on static HTML files</li>
-        	          	<li>Included JSOUP to translate the given HTML files into .txt files which are then utilized in the search</li>
-              				<li>Established Inverted index to find the frequency of every words and are then stored in a hash table with the word being the key and its frequency being its value</li>
-              				<li>Implemented Splay tree to rank the web pages</li>
-              				<li>Employed edit distance to find related searches if the keyword is misspelled or if it is not found</li>
-        	          </ul>
-        	        </div>
-        	        <div style="text-align: center;">
-        	        	<h5>
-        	        		<a class="link" href="https://github.com/rajocular/searchengine" target="_blank">GitHub Link</a>
-        	        	</h5>
-        	        </div>
-        	        <div class="modal-footer">
-        	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        	        </div>
-        	      </div>
-
-        	    </div>
-          </div>
-          <a data-target="#Modal_2" data-toggle="modal" style="cursor:pointer;">
-            <div class="carousel-item">
-              <img src="staticfiles/martialarts.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <a data-target="#Modal_2" data-toggle="modal" style="cursor:pointer;"><h2>Martial Arts Club Database</h2></a>
-                <p>click on the project name to view in detail</p>
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Track Progress Project</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <h3>Technologies</h3>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
+                          Python Django
+                        </div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                          SQLite
+                        </div>
+                        <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
+                          Bootstrap
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>Learned Django-rest-framework and the serialization it provides to create web APIs in JSON format.</li>
+                      <li>Accomplished Django-Mysql database connectivity with the help of MySQL Community Server.</li>
+                      <li>Obtained a good understanding on how a react fetch works with API and how the react router deals with page navigation.</li>
+                      <li>Implemented Mailjet in the back end to provide a simple mail interface.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
               </div>
             </div>
-            </a>
+            <div class="col">
+              <a data-target="#Modal_2" data-toggle="modal" >
+                <img class="img-responsive rounded" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/storeproject.jpg">
+                <p class="text-center">Online Store</p>
+              </a>
+            </div>
             <div class="modal fade" id="Modal_2" role="dialog">
-        	    <div class="modal-dialog">
-        	      <div class="modal-content">
-        	        <div class="modal-header">
-        	          <h4 class="modal-title">Martial Arts Club Database Project</h4>
-        	        </div>
-        	        <div class="modal-body">
-        	        	<div>
-        	          		<h3>Technologies</h3>
-        			          <div class="progress">
-        						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
-        						    Python Django
-        						  </div>
-        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-        						    SQLite
-        						  </div>
-        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
-        						    Bootstrap
-        						  </div>
-        					  </div>
-        			    </div>
-
-        	          <ul>
-        	          	<li>Designed the front end using Bootstrap and the back end using Python and SQLite</li>
-        				<li>Developed a database with a web interface to support both admin and guests</li>
-        				<li>Created an admin interface to serve the admin with permissions to register, view, edit, delete student details as well as other details such as their parent, class, attendance, progress and payment details</li>
-        				<li>Devised a guest interface to do the same functions mentioned above but records will get deleted after guest’s session ends</li>
-
-        	          </ul>
-        	        </div>
-        	        <div style="text-align: center;">
-        	        	<h5>
-        	        		<a class="link" href="https://github.com/rajocular/MartialArtsClub" target="_blank">GitHub Link</a>
-        	        	</h5>
-        	        	<h5>
-        	        		<a class="link" href="http://martialartsclub.herokuapp.com/" target="_blank">Web Link</a>
-        	        	</h5>
-        	        </div>
-        	        <div class="modal-footer">
-        	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        	        </div>
-        	      </div>
-
-        	    </div>
-          </div>
-          <a data-target="#Modal_3" data-toggle="modal" style="cursor:pointer;">
-            <div class="carousel-item">
-              <img src="staticfiles/storeproject.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <a data-target="#Modal_3" data-toggle="modal" style="cursor:pointer;"><h2>Online Store</h2></a>
-                <p>click on the project name to view in detail</p>
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Online Store Project</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                        <h3>Technologies</h3>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
+                            Python Django
+                          </div>
+                          <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                            SQLite
+                          </div>
+                          <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
+                            Bootstrap
+                          </div>
+                        </div>
+                    </div>
+                    <ul>
+                      <li>Designed the front end using Bootstrap and the back end using Python and SQLite</li>
+                      <li>Devised six different Django models for key factors such as Student, Parent, Attendance, Class, Progress and Payment</li>
+                      <li>Developed an Interface for users to register, edit their profile, change/reset their password with the help of Django forms</li>
+                      <li>Implemented a Django view coupled with Django sessions to keep track of user login activity</li>
+                      <li>Deployed website live on to the Heroku server with Postgres serving the backend</li>
+                    </ul>
+                    </div>
+                    <div style="text-align: center;">
+                      <h5>
+                        <a class="link" href="https://github.com/rajocular/store" target="_blank">GitHub Link</a>
+                      </h5>
+                      <h5>
+                        <a class="link" href="http://storeproject.herokuapp.com/" target="_blank">Web Link</a>
+                      </h5>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            </a>
-            <div class="modal fade" id="Modal_3" role="dialog">
-        	    <div class="modal-dialog">
-        	      <div class="modal-content">
-        	        <div class="modal-header">
-        	          <h4 class="modal-title">Online Store Project</h4>
-        	        </div>
-        	        <div class="modal-body">
-        	        	<div>
-        	          		<h3>Technologies</h3>
-        			          <div class="progress">
-        						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
-        						    Python Django
-        						  </div>
-        						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-        						    SQLite
-        						  </div>
-        						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
-        						    Bootstrap
-        						  </div>
-        					  </div>
-        			    </div>
+          <div class="row align-items-center">
+            <div class="col">
+              <a data-target="#Modal_3" data-toggle="modal" >
+                <img class="img-responsive rounded" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/searchengine.PNG">
+                <p class="text-center">Search Engine</p>
+              </a>
+              <div class="modal fade" id="Modal_3" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Search Engine Project</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div>
+                          <h3>Technologies</h3>
+                          <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" style="width:50%">
+                          Java
+                        </div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar" style="width:35%">
+                          HTML
+                        </div>
+                        <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
+                          Bootstrap
+                        </div>
+                      </div>
+                    </div>
 
-        	          <ul>
-        	          	<li>Designed the front end using Bootstrap and the back end using Python and SQLite</li>
-        				<li>Devised six different Django models for key factors such as Student, Parent, Attendance, Class, Progress and Payment</li>
-        				<li>Developed an Interface for users to register, edit their profile, change/reset their password with the help of Django forms</li>
-        				<li>Implemented a Django view coupled with Django sessions to keep track of user login activity</li>
-        				<li>Deployed website live on to the Heroku server with Postgres serving the backend</li>
-
-        	          </ul>
-        	        </div>
-        	        <div style="text-align: center;">
-        	        	<h5>
-        	        		<a class="link" href="https://github.com/rajocular/store" target="_blank">GitHub Link</a>
-        	        	</h5>
-        	        	<h5>
-        	        		<a class="link" href="http://storeproject.herokuapp.com/" target="_blank">Web Link</a>
-        	        	</h5>
-        	        </div>
-        	        <div class="modal-footer">
-        	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        	        </div>
-        	      </div>
-
-        	    </div>
+                      <ul>
+                        <li>Developed a simple version of search engine using Java that runs on static HTML files</li>
+                        <li>Included JSOUP to translate the given HTML files into .txt files which are then utilized in the search</li>
+                        <li>Established Inverted index to find the frequency of every words and are then stored in a hash table with the word being the key and its frequency being its value</li>
+                        <li>Implemented Splay tree to rank the web pages</li>
+                        <li>Employed edit distance to find related searches if the keyword is misspelled or if it is not found</li>
+                      </ul>
+                    </div>
+                    <div class="text-center">
+                      <h5>
+                        <a class="link" href="https://github.com/rajocular/searchengine" target="_blank">GitHub Link</a>
+                      </h5>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <a data-target="#Modal_4" data-toggle="modal" >
+                <img class="img-responsive rounded" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/martialarts.jpg">
+                <p class="text-center">Martial Arts Club</p>
+              </a>
+            </div>
+            <div class="modal fade" id="Modal_4" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Martial Arts Club Database Project</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <h3>Technologies</h3>
+                      <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
+                          Python Django
+                        </div>
+                        <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
+                          SQLite
+                        </div>
+                        <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
+                          Bootstrap
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>Designed the front end using Bootstrap and the back end using Python and SQLite</li>
+                      <li>Developed a database with a web interface to support both admin and guests</li>
+                      <li>Created an admin interface to serve the admin with permissions to register, view, edit, delete student details as well as other details such as their parent, class, attendance, progress and payment details</li>
+                      <li>Devised a guest interface to do the same functions mentioned above but records will get deleted after guest’s session ends</li>
+                    </ul>
+                  </div>
+                  <div style="text-align: center;">
+                    <h5>
+                      <a class="link" href="https://github.com/rajocular/MartialArtsClub" target="_blank">GitHub Link</a>
+                    </h5>
+                    <h5>
+                      <a class="link" href="http://martialartsclub.herokuapp.com/" target="_blank">Web Link</a>
+                    </h5>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+               </div>
+            </div>
           </div>
+
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
       </div>
-    </div>
-
       <div class="four parallax">
-
-          <div class="margin">
-            <h2>EDUCATION</h2>
-            <div class="container margin">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <img class="img-responsive img-fluid" src="staticfiles/Uwindsor_logo.png" style="margin: 0 auto">
-                  <h2>University of Windsor</h2>
-    		  				<h6>Master of Applied Computing</h6>
-    		  				<p>Sep 2017 - Dec 2018</p>
-                </div>
-                <div class="col-md-6 ">
-                  <img class="img-responsive img-circle img-fluid" src="staticfiles/SJCE.png" style="margin: 0 auto">
-                  <h2>St. Joseph's College of Engineering</h2>
-    		  				<h6>Bachelor of Engineering in Computer Science and Engineering</h6>
-    		  				<p>Sep 2013 - May 2017</p>
-                </div>
+        <div class="margin">
+          <h2>EDUCATION</h2>
+          <div class="container margin">
+            <div class="row">
+              <div class="col-md-6 ">
+                <img class="img-responsive img-fluid" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/logos/university-of-windsor.png" style="margin: 0 auto">
+                <h2>University of Windsor</h2>
+                <h6>Master of Applied Computing</h6>
+                <p>Sep 2017 - Dec 2018</p>
               </div>
+              <div class="col-md-6 ">
+                <img class="img-responsive img-circle img-fluid" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/logos/sjce.png" style="margin: 0 auto">
+                <h2>St. Joseph's College of Engineering</h2>
+                <h6>Bachelor of Engineering in Computer Science and Engineering</h6>
+                <p>Sep 2013 - May 2017</p>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
 
 
