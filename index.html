@@ -1,166 +1,83 @@
 <!doctype html>
+
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <meta charset="utf-8">
+  <title>Rajasekaran Manivannan - Web developer</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+	body{
+		font-family: Roboto, Comic Sans MS;
+		/*color: white;*/
+		background-image: url("bg5.jpg");
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>Rajasekaran Manivannan - Web developer</title>
-    <style>
+	a{
+		cursor: pointer;
+	}
 
+  	.one{
+  		height:80vh;
+  	}
 
-      body {
-          font-family: Roboto;
-      }
+  	.three{
+		height: 70vh;
+  	}
 
-      a{
-      	cursor: pointer;
-      }
+  	.one{
+  		display: grid;
+  	}
 
+  	.margin{
+  		margin: auto;
+  	}
 
+  	.two, .three, .four{
+  		background-color: white;
+  		color: #708090;
+  	}
 
-      .one{
-        background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background1.jpg");
-        text-align: center;
-        height:100vh;
-        scroll-snap-align:start;
-        display: grid;
-        font-family: chalkduster, fantasy, Roboto, Comic Sans MS;
-      }
-      .parallax {
+  	.five{
+  		height:20vh;
 
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      }
+  	}
 
-      .one .margin{
-      margin: 10% auto 0 auto;
-      }
+  	.content{
+  		height: 40vh;
+  	}
 
-      .two{
-        background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background2.jpg");
-        height:100vh;
-        scroll-snap-align:start;
-        color: #D3D3D3;
-      }
-      .three{
-      	background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background3.jpg");
-        height: 100vh;
-        scroll-snap-align: start;
-      }
-      .three .margin{
-        margin: 10% auto 0 auto;
-      }
+	.my-color{
+		background-color: red;
+	}
 
-
-      .four{
-        text-align: center;
-        background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/education.jpg");
-        height:100vh;
-        scroll-snap-align:start;
-        display:grid;
-
-      }
-
-      .four .margin{
-        margin: 10% auto 0 auto;
-      }
-
-
-      .margin{
-        place-items: center;
-      }
-
-      .margin-bottom{
+	.margin-custom{
         margin-bottom: 2%;
+	    margin-top: 2%;
+    }
+
+    .content-padding{
+    	padding-bottom: 10%;
+    }
+
+	.medium-font{
+        font-size: 4em;
       }
 
-      .medium-font{
-        font-size: 3em;
-      }
-
-      .border {
-        border: 3px solid blue;
-      }
-
-      .mobile-view{
+    .mobile-view{
         display: none;
       }
 
-      .my-button:hover{
-        color: white;
-      }
 
-      .content-color{
-        color: #D3D3D3;
-      }
 
-      .project-image{
-      	opacity: 1;
-      }
-
-      .project-image:hover{
-      	opacity: 0.8;
-      	border: 1px solid #00CED1;
-      }
-
-      @media screen and (min-width: 768px){
-        /*body{
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-        }*/
-
-        .resume-home{
-          display: none;
-        }
-
-        .resume-nav{
-          display: inline;
-        }
-
-      }
-
-      @media screen and (max-width: 768px){
-        .image{
-          display:none;
-        }
-
-        .mobile-view{
-          display: grid;
-        }
-
-        .four{
-          background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background5.jpg");
-        }
-
-        .two{
-          height: auto;
-        }
-
-        .three{
-          height: auto;
-        }
-
-        .resume-nav{
-          display: none;
-        }
-
-        .resume-home{
-          display: inline;
-        }
-      }
-      .arrow-bounce {
+	.arrow-bounce {
       	-moz-animation: bounce 3s infinite;
       	-webkit-animation: bounce 3s infinite;
       	animation: bounce 3s infinite;
@@ -214,467 +131,613 @@
         }
       }
 
-    </style>
-  </head>
-  <body>
-    <div class="one parallax ">
-      <div class="container-fluid navbar-nav">
-          <br>
-         <div class="row">
-           <div class="col resume-nav" >
-             <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button class="btn btn-dark btn-lg my-button">&nbsp;Resume</button></a>
-           </div>
-           <div class="col">
-             <a href="mailto:manivanr@uwindsor.ca">
-               <img src="https://img.icons8.com/bubbles/50/000000/gmail.png">
-             </a>
-           </div>
-           <div class="col">
-             <a class="link" href="https://www.linkedin.com/in/rajasekaran-manivannan/" target="_blank">
-               <img src="https://img.icons8.com/bubbles/50/000000/linkedin.png">
-             </a>
-           </div>
-           <div class="col">
-             <a href="tel:+15199816630">
-               <img src="https://img.icons8.com/bubbles/50/000000/phone.png">
-             </a>
-           </div>
-           <div class="col">
-             <a class="link" href="https://github.com/rajocular" target="_blank">
-               <img src="https://img.icons8.com/color/48/000000/github.png">
-             </a>
-           </div>
+
+      @media screen and (min-width: 1020px){
+		/*body{
+			scroll-snap-type: y mandatory;
+        	overflow-y: scroll;
+		}
+
+		 .scroll, .one, .two, .three, .four{
+	  		scroll-snap-align:start;
+	      }*/
+
+        .resume-home{
+          display: none;
+        }
+
+        .resume-nav{
+          display: inline;
+        }
+
+      }
+
+      @media screen and (max-width: 1020px){
+        .image{
+          display:none;
+        }
+
+        .mobile-view{
+          display: grid;
+        }
+
+        .two{
+          height: auto;
+        }
+
+        .three{
+          height: auto;
+        }
+
+        .resume-nav{
+          display: none;
+        }
+
+        .resume-home{
+          display: inline;
+        }
+      }
+
+  </style>
+</head>
+
+<body>
+
+	<ul class="nav nav-pills nav-fill" style="scroll-snap-align: start">
+	  <li class="nav-item resume-nav">
+	    <a class="nav-link active" href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf"><button type="button" class="btn btn-outline-dark btn-lg" >Resume</button></a>
+	  </li>
+	  <li class="nav-item">
+	    <a href="mailto:manivanr@uwindsor.ca">
+           <img src="https://img.icons8.com/bubbles/100/000000/gmail.png">
+        </a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="link" href="https://www.linkedin.com/in/rajasekaran-manivannan/" target="_blank">
+           <img src="https://img.icons8.com/bubbles/100/000000/linkedin.png">
+        </a>
+	  </li>
+	  <li class="nav-item">
+	    <a href="tel:+15199816630">
+           <img src="https://img.icons8.com/bubbles/100/000000/phone.png">
+        </a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="link" href="https://github.com/rajocular" target="_blank">
+           <img src="https://img.icons8.com/color/96/000000/github.png">
+        </a>
+	  </li>
+	</ul>
+
+	<section class="one">
+		<section class="margin container text-center">
+			<div class="row">
+	            <div class="col-lg-12 col-md-12 cold-xs-12 col-md-12 cold-xs-12">
+		            <h1>Hi, I'm Raj</h1>
+		            <p>I am a<span class="typewrite" data-period="1000" data-type='[ " Passionate Learner", "n Innovative thinker", " Web developer"]'></span> </p>
+	            </div>
+	        </div>
+	        <div class="row">
+	            <div class="col-lg-12 col-md-12 cold-xs-12 col-md-12 cold-xs-12 col-md-12 cold-xs-12">
+	              <blockquote class="blockquote" style="border:none; font-family: Comic sans;">
+	                <p >
+	                  Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.
+	                </p>
+	                <footer class="blockquote-footer"  style="font-size: 2em">Bill Gates, <cite title="Source Title">Microsoft</cite></footer>
+	              </blockquote>
+	              <br>
+	            </div>
+	        </div>
+		</section>
+		<div class="row resume-home text-center">
+            <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button class="btn btn-outline-dark btn-lg">&nbsp;Resume</button></a>
+          </div>
+		<div class="container text-center">
+	        <div class="row">
+	          <div class="col-lg-12 col-md-12 cold-xs-12 col-md-12 cold-xs-12">
+          			<i class="fas fa-angle-double-down medium-font arrow-bounce"></i>
+	          </div>
+	        </div>
+	    </div>
+
+	</section>
+	<section id="two" class="two container shadow-lg">
+		<div class="container text-center margin-custom content-padding">
+          <h2 class="display-3">PROJECTS</h2>
+        </div>
+
+        <div class="container image">
+          <div class="row content scroll" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+            <div class="col-md-4">
+                <a data-target="#Modal_1" data-toggle="modal" >
+                  <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/progress.jpg" alt="Track Progress">
+                </a>
+            </div>
+            <div class="col text-center">
+                <h3>Track Progress</h3><br>
+                <h6> A web application to track students progress </h6>
+
+                <section class=" medium-font">
+              		<i class="devicon-react-original colored"></i>
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+            </div>
+          </div>
+
+          <div class="row content scroll" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+            <div class="col-lg-8 text-center">
+                <h3>Online Store</h3><br>
+                <h6> A simple online store web application</h6>
+
+                <section class=" medium-font">
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+
+	            <section>
+	                <a class="link btn btn-outline-info" href="https://github.com/rajocular/store" target="_blank">GitHub Link</a>
+
+	                <a class="link btn btn-outline-info" href="http://storeproject.herokuapp.com/" target="_blank">Web Link</a>
+
+	            </section>
+            </div>
+            <div class="col-md-4">
+                <a data-target="#Modal_2" data-toggle="modal" >
+                  <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/storeproject.jpg" alt="Online Store">
+                </a>
+            </div>
+          </div>
+          <div class="row content scroll" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+            <div class="col-md-4">
+                <a data-target="#Modal_3" data-toggle="modal" >
+                  <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/searchengine.PNG" alt="Search Engine">
+                </a>
+            </div>
+            <div class="col-lg-8 text-center">
+                <h3>Search Engine</h3><br>
+                <h6> A simple search engine for static html files</h6>
+
+				<section class=" medium-font">
+              		<i class="devicon-java-plain colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+              	<section>
+	                <a class="link btn btn-outline-info" href="https://github.com/rajocular/searchengine" target="_blank">GitHub Link</a>
+	            </section>
+            </div>
+          </div>
+          <div class="row content scroll" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+            <div class="col-lg-8 text-center">
+                <h3>Martial Arts Club</h3><br>
+                <h6> A web application to maintain a database</h6>
+
+                <section class=" medium-font">
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+
+              	<section>
+	                <a class="link btn btn-outline-info" href="https://github.com/rajocular/MartialArtsClub" target="_blank">GitHub Link</a>
+
+	                <a class="link btn btn-outline-info" href="http://martialartsclub.herokuapp.com/" target="_blank">Web Link</a>
+
+	            </section>
+            </div>
+            <div class="col-md-4">
+                <a data-target="#Modal_4" data-toggle="modal" >
+                  <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/martialarts.jpg" alt="Search Engine">
+                </a>
+            </div>
+          </div>
+        </div>
+
+		<div class="container mobile-view">
+          <div class="row"  data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+              <a data-target="#Modal_1" data-toggle="modal" >
+                <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/progress.jpg" alt="Track Progress">
+              </a>
+              <h3 class="text-center">Track Progress</h3><br>
+                <h6> A web application to track students progress </h6>
+
+                <section class=" medium-font">
+              		<i class="devicon-react-original colored"></i>
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+          </div>
+          <hr>
+          <div class="row" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+              <a data-target="#Modal_2" data-toggle="modal" >
+                <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/storeproject.jpg" alt="Online Store">
+              </a>
+              <h3 class="text-center">Online Store</h3><br>
+                <h6> A simple online store web application</h6>
+
+                <section class=" medium-font">
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+
+	            <div>
+	                <a class="link btn btn-outline-info" href="https://github.com/rajocular/store" target="_blank">GitHub Link</a>
+
+	                <a class="link btn btn-outline-info" href="http://storeproject.herokuapp.com/" target="_blank">Web Link</a>
+
+	            </div>
+          </div>
+          <hr>
+          <div class="row" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+              <a data-target="#Modal_3" data-toggle="modal" >
+                <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/searchengine.PNG" alt="Search Engine">
+              </a>
+              <h3 class="text-center">Search Engine</h3><br>
+                <h6> A simple online store web application</h6>
+
+                <section class=" medium-font">
+              		<i class="devicon-java-plain colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+
+	            <section>
+	                <a class="link btn btn-outline-info" href="https://github.com/rajocular/searchengine" target="_blank">GitHub Link</a>
+	            </section>
+          </div>
+          <hr>
+          <div class="row text-center" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+              <a data-target="#Modal_4" data-toggle="modal" >
+                <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/martialarts.jpg" alt="Search Engine">
+              </a>
+              <h3>Martial Arts Club</h3><br>
+              <h6>A web application to maintain a database</h6>
+
+                <section class=" medium-font">
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+
+            <section>
+                <a class="link btn btn-outline-info" href="https://github.com/rajocular/MartialArtsClub" target="_blank">GitHub Link</a>
+                <a class="link btn btn-outline-info" href="http://martialartsclub.herokuapp.com/" target="_blank">Web Link</a>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Modal_1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Track Progress Project</h4>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Learned Django-rest-framework and the serialization it provides to create web APIs in JSON format.</li>
+                <li>Accomplished Django-Mysql database connectivity with the help of MySQL Community Server.</li>
+                <li>Obtained a good understanding on how a react fetch works with API and how the react router deals with page navigation.</li>
+                <li>Implemented Mailjet in the back end to provide a simple mail interface.</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Modal_2" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Online Store Project</h4>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Designed the front end using Bootstrap and the back end using Python and SQLite</li>
+                <li>Devised six different Django models for key factors such as Student, Parent, Attendance, Class, Progress and Payment</li>
+                <li>Developed an Interface for users to register, edit their profile, change/reset their password with the help of Django forms</li>
+                <li>Implemented a Django view coupled with Django sessions to keep track of user login activity</li>
+                <li>Deployed website live on to the Heroku server with Postgres serving the backend</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Modal_3" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Search Engine Project</h4>
+            </div>
+            <div class="modal-body">
+
+              <ul>
+                <li>Developed a simple version of search engine using Java that runs on static HTML files</li>
+                <li>Included JSOUP to translate the given HTML files into .txt files which are then utilized in the search</li>
+                <li>Established Inverted index to find the frequency of every words and are then stored in a hash table with the word being the key and its frequency being its value</li>
+                <li>Implemented Splay tree to rank the web pages</li>
+                <li>Employed edit distance to find related searches if the keyword is misspelled or if it is not found</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="Modal_4" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Martial Arts Club Database Project</h4>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li>Designed the front end using Bootstrap and the back end using Python and SQLite</li>
+                <li>Developed a database with a web interface to support both admin and guests</li>
+                <li>Created an admin interface to serve the admin with permissions to register, view, edit, delete student details as well as other details such as their parent, class, attendance, progress and payment details</li>
+                <li>Devised a guest interface to do the same functions mentioned above but records will get deleted after guest’s session ends</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
          </div>
       </div>
 
-      <div class="container">
+        <!-- <div class="container mobile-view">
+          <div class="row margin-custom" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+          	<div class="col text-center">
+          		<section>
+	              	<h1 class="content-color display-3 content-padding">Track Progress</h1>
 
-          <div class="row">
-            <div class="col-lg-12">
-            <h1>Hi, I'm Raj</h1>
-            <p>I am a<span class="typewrite" data-period="1000" data-type='[ " Passionate Learner", "n Innovative thinker", " Web developer"]'></span> </p>
+	          		<a class="content-padding" data-target="#Modal_1" data-toggle="modal" >
+	                	<img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/progress.jpg" alt="Track Progress">
+	              	</a>
+              	</section>
+				<br>
+              	<h3>Key Technologies</h3>
+              	<section class=" medium-font">
+              		<i class="devicon-react-original colored"></i>
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+          	</div>
+          	<div class="col text-center">
+          		<section>
+	          		<h1 class="content-color display-3 content-padding">Online Store</h1>
+
+	          		<a class="content-padding"  data-target="#Modal_2" data-toggle="modal" >
+	                	<img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/storeproject.jpg" alt="Online Store">
+	              	</a>
+              	</section>
+              	<br>
+              	<h3>Key Technologies</h3>
+              	<section class=" medium-font">
+              		<i class="devicon-react-original colored"></i>
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+          	</div>
+          </div>
+          <hr>
+          <div class="row margin-custom" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+          	<div class="col text-center">
+          		<section>
+          			<h3 class="content-color display-3 content-padding">Search Engine</h3>
+          			<a data-target="#Modal_3" data-toggle="modal" >
+		                <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/searchengine.PNG" alt="Search Engine">
+		            </a>
+          		</section>
+          		<br>
+              	<h3>Key Technologies</h3>
+              	<section class=" medium-font">
+              		<i class="devicon-react-original colored"></i>
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
             </div>
-           </div>
-          <div class="row">
-            <div class="col-lg-12">
-              <blockquote class="blockquote" style="border:none; font-family: Comic sans;">
-                <p  style="font-size: 2em">
-                  Learning to write programs stretches your mind, and helps you think better, creates a way of thinking about things that I think is helpful in all domains.
-                </p>
-                <footer class="blockquote-footer"  style="font-size: 2em">Bill Gates, <cite title="Source Title">Microsoft</cite></footer>
-              </blockquote>
-              <br>
-            </div>
-          </div>
-          <div class="row resume-home">
-            <a href="https://s3.us-east-2.amazonaws.com/rajocular-static-files/Rajasekaran_Manivannan_Resume.pdf" target="_blank"><button class="btn btn-dark btn-lg my-button">&nbsp;Resume</button></a>
-          </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-          <p style="font-size: 2em">Scroll down</p>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <i class="fas fa-angle-double-down medium-font arrow-bounce"></i>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-    <div id="skills" class="two parallax">
-        <div class="container text-center margin-bottom">
+            <div class="col text-center">
+            	<section>
+	              <h3 class="content-color display-3 content-padding">Martial Arts Club</h3>
+	              <a data-target="#Modal_4" data-toggle="modal" >
+	                <img class="img-thumbnail" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/martialarts.jpg" alt="Search Engine">
+	              </a>
+              	</section>
+              	<br>
+              	<h3>Key Technologies</h3>
+              	<section class=" medium-font">
+              		<i class="devicon-react-original colored"></i>
+              		<i class="devicon-python-plain"></i>
+              		<i class="devicon-django-line colored"></i>
+              		<i class="devicon-html5-plain colored"></i>
+              		<i class="devicon-css3-plain colored"></i>
+              		<i class="devicon-bootstrap-plain colored"></i>
+              	</section>
+          	</div>
+        	</div>
+        </div> -->
+	</section>
+	<section class="three container" >
+		<div class="container text-center">
           <h1>SKILLS</h1>
         </div>
-        <div class ="table-responsive image">
-          <table class="table">
-            <thead class="thead-light text-center table-borderless">
-              <tr>
-                <th scope="col">PROGRAMMING</th>
-                <th scope="col">FRAMEWORKS</th>
-                <th scope="col">LIBRARIES</th>
-                <th scope="col">DATABASES</th>
-                <th scope="col">CLOUD</th>
-                <th scope="col">OS</th>
-                <th scope="col">VCS</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <h2>Python</h2>
-                  <h2>Java</h2>
-                  <h2>C</h2>
-                  <h2>C++</h2>
-                  <h2>HTML</h2>
-                  <h2>CSS</h2>
-                  <h2>JavaScript</h2>
-                  <h2>TypeScript</h2>
-                  <h2>ShellScript</h2>
-                </td>
-                <td>
-                  <h2>Angular</h2>
-                  <h2>React</h2>
-                  <h2>Django</h2>
-                  <h2>Bootstrap</h2>
-                  <h2>React Native</h2>
-                </td>
-                <td>
-                  <h2>Redux</h2>
-                  <h2>RxJS</h2>
-                  <h2>Jsoup</h2>
-                  <h2>Beautiful Soup</h2>
-                </td>
-                <td>
-                  <h2>MySQL</h2>
-                  <h2>SQLite</h2>
-                  <h2>Oracle</h2>
-                </td>
-                <td>
-                  <h2>Amazon aws</h2>
-                  <h2>IBM Bluemix</h2>
-                </td>
-                <td>
-                  <h2>Windows</h2>
-                  <h2>Linux</h2>
-                  <h2>MacOS</h2>
-                </td>
-                <td>
-                  <h2>Git</h2>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="container-fluid mobile-view">
-          <div class="row " >
-          	<div class="col-lg-12">
+
+        <div class="container-fluid">
+          <div class="row "  >
+          	<div class="col-lg-12 col-md-12 cold-xs-12 col-md-12 cold-xs-12">
               <h4>Programming</h4>
-            	<div class="progress">
-          	  	<div class="progress-bar" role="progressbar" style="width:10%; ">
+            	<div class="progress" style="height: 20px;">
+          	  	<div class="progress-bar bg-info" role="progressbar" style="width:10%; ">
           	    	Python
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:10%; ">
           	    	Java
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:10%; ">
           	    	C
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:10%; ">
           	    	C++
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:10%; ">
           	    	HTML
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:10%; ">
           	    	CSS
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:10%; ">
           	    	JS
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:10%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:10%; ">
           	    	TS
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:20%; ">
           	    	ShellScript
           	  	</div>
             	</div>
 
               <h4>Frameworks</h4>
-            	<div class="progress">
-          	  	<div class="progress-bar" role="progressbar" style="width:20%; ">
+            	<div class="progress" style="height: 20px;">
+          	  	<div class="progress-bar bg-info" role="progressbar" style="width:20%; ">
           	    	Angular
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:20%; ">
           	    	React
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:20%; ">
           	    	Django
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:20%; ">
           	      Bootstrap
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:20%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:20%; ">
           	    	React Native
           	  	</div>
             	</div>
 
               <h4>libraries</h4>
-            	<div class="progress">
-          	  	<div class="progress-bar" role="progressbar" style="width:25%; ">
+            	<div class="progress" style="height: 20px;">
+          	  	<div class="progress-bar bg-info" role="progressbar" style="width:25%; ">
           	    	Redux
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:25%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:25%; ">
           	    	RxJs
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:25%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:25%; ">
           	    	JSoup
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:25%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:25%; ">
           	    	Beautiful Soup
           	  	</div>
             	</div>
 
               <h4>Databases</h4>
-            	<div class="progress">
-          	  	<div class="progress-bar" role="progressbar" style="width:33.33%; ">
+            	<div class="progress" style="height: 20px;">
+          	  	<div class="progress-bar bg-info" role="progressbar" style="width:33.33%; ">
           	    	MySQL
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:33.33%; ">
           	    	Oracle
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:33.33%; ">
           	    	SQLite
           	  	</div>
             	</div>
 
               <h4>OS</h4>
-            	<div class="progress">
-          	  	<div class="progress-bar" role="progressbar" style="width:33.33%; ">
+            	<div class="progress" style="height: 20px;">
+          	  	<div class="progress-bar bg-info" role="progressbar" style="width:33.33%; ">
           	    	Windows
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:33.33%; ">
           	    	Linux
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:33.33%; ">
+                <div class="progress-bar bg-info" role="progressbar" style="width:33.33%; ">
           	    	MacOS
           	  	</div>
             	</div>
 
               <h4>Version Control System</h4>
-            	<div class="progress">
-          	  	<div class="progress-bar" role="progressbar" style="width:100%; ">
+            	<div class="progress" style="height: 20px;">
+          	  	<div class="progress-bar bg-info" role="progressbar" style="width:100%; ">
           	    	GIT
           	  	</div>
             	</div>
 
               <h4>CLOUD</h4>
-            	<div class="progress">
-          	  	<div class="progress-bar" role="progressbar" style="width:50%;">
+            	<div class="progress" style="height: 20px;">
+          	  	<div class="progress-bar bg-info" role="progressbar" style="width:50%;">
           	    	Amazon AWS
           	  	</div>
-                <div class="progress-bar" role="progressbar" style="width:50%;">
+                <div class="progress-bar bg-info" role="progressbar" style="width:50%;">
           	    	IBM Bluemix
           	  	</div>
             	</div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="three parallax">
-        <div class="container text-center margin-bottom">
-          <h2 class="content-color">PROJECTS</h2>
-        </div>
-        <div class="container ">
-          <div class="row align-items-center">
-            <div class="col">
-              <a data-target="#Modal_1" data-toggle="modal" >
-                <img class="img-responsive  project-image" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/progress.jpg">
-                <h3 class="text-center content-color">Track Progress</h3>
-              </a>
-            </div>
-            <div class="modal fade" id="Modal_1" role="dialog">
-        	    <div class="modal-dialog">
-        	      <div class="modal-content">
-        	        <div class="modal-header">
-        	          <h4 class="modal-title">Track Progress Project</h4>
-        	        </div>
-        	        <div class="modal-body">
-        	        	<div>
-      	          		<h3>Technologies</h3>
-      			          <div class="progress">
-          						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
-          						    Python Django
-          						  </div>
-          						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-          						    SQLite
-          						  </div>
-          						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
-          						    Bootstrap
-          						  </div>
-          					  </div>
-        			      </div>
-        	          <ul>
-                      <li>Learned Django-rest-framework and the serialization it provides to create web APIs in JSON format.</li>
-                      <li>Accomplished Django-Mysql database connectivity with the help of MySQL Community Server.</li>
-              				<li>Obtained a good understanding on how a react fetch works with API and how the react router deals with page navigation.</li>
-              				<li>Implemented Mailjet in the back end to provide a simple mail interface.</li>
-          	        </ul>
-        	        </div>
-        	        <div class="modal-footer">
-        	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        	        </div>
-        	      </div>
-        	    </div>
-            </div>
-            <div class="col">
-              <a data-target="#Modal_2" data-toggle="modal" >
-        				<img class="img-responsive rounded project-image" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/storeproject.jpg">
-        				<h3 class="content-color text-center">Online Store</h3>
-        			</a>
-            </div>
-            <div class="modal fade" id="Modal_2" role="dialog">
-        	    <div class="modal-dialog">
-        	      <div class="modal-content">
-        	        <div class="modal-header">
-        	          <h4 class="modal-title">Online Store Project</h4>
-        	        </div>
-        	        <div class="modal-body">
-        	        	<div>
-        	          		<h3>Technologies</h3>
-        			          <div class="progress">
-            						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
-            						    Python Django
-            						  </div>
-            						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-            						    SQLite
-            						  </div>
-            						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
-            						    Bootstrap
-            						  </div>
-            					  </div>
-        			      </div>
-        	          <ul>
-        	          	<li>Designed the front end using Bootstrap and the back end using Python and SQLite</li>
-              				<li>Devised six different Django models for key factors such as Student, Parent, Attendance, Class, Progress and Payment</li>
-              				<li>Developed an Interface for users to register, edit their profile, change/reset their password with the help of Django forms</li>
-              				<li>Implemented a Django view coupled with Django sessions to keep track of user login activity</li>
-              				<li>Deployed website live on to the Heroku server with Postgres serving the backend</li>
-          	        </ul>
-          	        </div>
-          	        <div style="text-align: center;">
-          	        	<h5>
-          	        		<a class="link" href="https://github.com/rajocular/store" target="_blank">GitHub Link</a>
-          	        	</h5>
-          	        	<h5>
-          	        		<a class="link" href="http://storeproject.herokuapp.com/" target="_blank">Web Link</a>
-          	        	</h5>
-          	        </div>
-          	        <div class="modal-footer">
-          	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          	        </div>
-          	      </div>
-          	    </div>
-              </div>
-            </div>
-          <div class="row align-items-center">
-            <div class="col">
-              <a data-target="#Modal_3" data-toggle="modal" >
-        				<img class="img-responsive rounded project-image" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/searchengine.PNG">
-        				<h3 class="text-center content-color">Search Engine</h3>
-        			</a>
-              <div class="modal fade" id="Modal_3" role="dialog">
-          	    <div class="modal-dialog">
-          	      <div class="modal-content">
-          	        <div class="modal-header">
-                      <h4 class="modal-title">Search Engine Project</h4>
-          	        </div>
-          	        <div class="modal-body">
-          	        	<div>
-          	          		<h3>Technologies</h3>
-          			          <div class="progress">
-          						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:50%">
-          						    Java
-          						  </div>
-          						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:35%">
-          						    HTML
-          						  </div>
-          						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
-          						    Bootstrap
-          						  </div>
-          					  </div>
-          			    </div>
-
-          	          <ul>
-          	          	<li>Developed a simple version of search engine using Java that runs on static HTML files</li>
-          	          	<li>Included JSOUP to translate the given HTML files into .txt files which are then utilized in the search</li>
-                				<li>Established Inverted index to find the frequency of every words and are then stored in a hash table with the word being the key and its frequency being its value</li>
-                				<li>Implemented Splay tree to rank the web pages</li>
-                				<li>Employed edit distance to find related searches if the keyword is misspelled or if it is not found</li>
-          	          </ul>
-          	        </div>
-          	        <div class="text-center">
-          	        	<h5>
-          	        		<a class="link" href="https://github.com/rajocular/searchengine" target="_blank">GitHub Link</a>
-          	        	</h5>
-          	        </div>
-          	        <div class="modal-footer">
-          	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          	        </div>
-          	      </div>
-          	    </div>
-              </div>
-            </div>
-            <div class="col">
-              <a data-target="#Modal_4" data-toggle="modal" >
-        				<img class="img-responsive rounded project-image" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/project-images/martialarts.jpg">
-        				<h3 class="text-center content-color">Martial Arts Club</h3>
-        			</a>
-            </div>
-            <div class="modal fade" id="Modal_4" role="dialog">
-        	    <div class="modal-dialog">
-        	      <div class="modal-content">
-        	        <div class="modal-header">
-        	          <h4 class="modal-title">Martial Arts Club Database Project</h4>
-        	        </div>
-        	        <div class="modal-body">
-        	        	<div>
-      	          		<h3>Technologies</h3>
-      			          <div class="progress">
-          						  <div class="progress-bar progress-bar-success" role="progressbar" style="width:70%">
-          						    Python Django
-          						  </div>
-          						  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
-          						    SQLite
-          						  </div>
-          						  <div class="progress-bar progress-bar-info" role="progressbar" style="width:15%">
-          						    Bootstrap
-          						  </div>
-      					      </div>
-        			      </div>
-        	          <ul>
-        	          	<li>Designed the front end using Bootstrap and the back end using Python and SQLite</li>
-              				<li>Developed a database with a web interface to support both admin and guests</li>
-              				<li>Created an admin interface to serve the admin with permissions to register, view, edit, delete student details as well as other details such as their parent, class, attendance, progress and payment details</li>
-              				<li>Devised a guest interface to do the same functions mentioned above but records will get deleted after guest’s session ends</li>
-        	          </ul>
-        	        </div>
-        	        <div style="text-align: center;">
-        	        	<h5>
-        	        		<a class="link" href="https://github.com/rajocular/MartialArtsClub" target="_blank">GitHub Link</a>
-        	        	</h5>
-        	        	<h5>
-        	        		<a class="link" href="http://martialartsclub.herokuapp.com/" target="_blank">Web Link</a>
-        	        	</h5>
-        	        </div>
-        	        <div class="modal-footer">
-        	          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        	        </div>
-        	      </div>
-          	   </div>
-            </div>
-          </div>
-
-          </div>
-        </div>
-      <div class="four parallax content-color">
-        <div class="margin">
+	</section>
+	<section class="four container text-center">
+		<div>
           <h2>EDUCATION</h2>
-          <div class="container margin">
+          <br>
+          <div class="container margin text-center" data-aos="zoom-in" data-aos-duration="2000">
             <div class="row">
-              <div class="col-md-6 ">
+              <div class="col-md-12 ">
                 <img class="img-responsive img-fluid" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/logos/university-of-windsor.png" style="margin: 0 auto">
                 <h2>University of Windsor</h2>
   		  				<h6>Master of Applied Computing</h6>
   		  				<p>Sep 2017 - Dec 2018</p>
               </div>
-              <div class="col-md-6 ">
+            </div>
+            <br>
+            <div class="row content-padding">
+              <div class="col-md-12 ">
                 <img class="img-responsive img-circle img-fluid" src="https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/logos/sjce.png" style="margin: 0 auto">
                 <h2>St. Joseph's College of Engineering</h2>
   		  				<h6>Bachelor of Engineering in Computer Science and Engineering</h6>
@@ -683,17 +746,22 @@
             </div>
           </div>
         </div>
-      </div>
+        <br>
+	</section>
+
+	<br><br>
 
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+	<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script type="text/javascript">
-        var TxtType = function(el, toRotate, period) {
+    	var TxtType = function(el, toRotate, period) {
           this.toRotate = toRotate;
           this.el = el;
           this.loopNum = 0;
@@ -749,30 +817,6 @@
           css.innerHTML = ".typewrite > .wrap { border-right: 2px solid #1CD7D7}";
           document.body.appendChild(css);
       };
-
-
-
-      var images = document.querySelectorAll(".skill");
-
-      for(var i =0;i<images.length; i++){
-        images[i].addEventListener("mouseover", zoomin , false);
-        images[i].addEventListener("mouseleave", zoomout , false);
-      }
-
-      function zoomin() {
-        var child_elements = this.getElementsByTagName('*');
-        child_elements[0].style.display = "none";
-        child_elements[0].style.transition = "5s";
-        child_elements[1].style.display = "inline";
-      }
-
-      function zoomout() {
-        var child_elements = this.getElementsByTagName('*');
-        child_elements[0].style.display = "inline";
-        child_elements[1].style.display = "none";
-      }
-
-
     </script>
-  </body>
+</body>
 </html>
