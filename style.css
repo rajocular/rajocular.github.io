@@ -1,0 +1,214 @@
+body{
+		font-family: Roboto, Comic Sans MS;
+		/*background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background1.jpg");*/
+    background-color: black;
+	    background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+	a{
+		cursor: pointer;
+	}
+
+  	.one{
+  		height:80vh;
+      color: #DCDCDC;
+  	}
+
+  	/*.three{
+		height: 70vh;
+  	}*/
+
+  	.one{
+  		display: grid;
+  	}
+
+  	.margin{
+  		margin: auto;
+  	}
+
+  	.two, .three, .four{
+  		/*background-color: #DCDCDC;*/
+  		color: #708090;
+  	}
+
+  	.five{
+  		height:20vh;
+
+  	}
+
+  	.content{
+  		height: 40vh;
+  	}
+
+    .my-button:hover{
+        box-shadow: 0 0 20px 0px  #FF0000;
+      }
+	
+  	.my-color{
+  		background-color: red;
+  	}
+
+  	.margin-custom{
+        padding-bottom: 5%;
+  	    padding-top: 5%;
+    }
+
+    .content-padding{
+    	padding-bottom: 10%;
+    }
+
+  	.medium-font{
+        font-size: 4em;
+    }
+
+    .mobile-view{
+        display: none;
+    }
+
+    
+
+
+
+
+    .project-image:hover{
+    		
+    	-webkit-animation: pulsate-fwd 0.9s ease-in-out infinite both;
+    	        animation: pulsate-fwd 0.9s ease-in-out infinite both;
+    }
+
+    	
+    	@-webkit-keyframes pulsate-fwd {
+    	  0% {
+    	    -webkit-transform: scale(1);
+    	            transform: scale(1);
+    	  }
+    	  50% {
+    	    -webkit-transform: scale(1.1);
+    	            transform: scale(1.1);
+    	  }
+    	  100% {
+    	    -webkit-transform: scale(1);
+    	            transform: scale(1);
+    	  }
+    	}
+    	@keyframes pulsate-fwd {
+    	  0% {
+    	    -webkit-transform: scale(1);
+    	            transform: scale(1);
+    	  }
+    	  50% {
+    	    -webkit-transform: scale(1.1);
+    	            transform: scale(1.1);
+    	  }
+    	  100% {
+    	    -webkit-transform: scale(1);
+    	            transform: scale(1);
+    	  }
+    	}
+
+
+
+     
+
+	.arrow-bounce {
+        color: #FF0000;
+      	-moz-animation: bounce 3s infinite;
+      	-webkit-animation: bounce 3s infinite;
+      	animation: bounce 3s infinite;
+      }
+      @-moz-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -moz-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+      @-webkit-keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          -moz-transform: translateY(0);
+          -ms-transform: translateY(0);
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+        40% {
+          -moz-transform: translateY(-30px);
+          -ms-transform: translateY(-30px);
+          -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+        }
+        60% {
+          -moz-transform: translateY(-15px);
+          -ms-transform: translateY(-15px);
+          -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+        }
+      }
+
+      
+
+      @media screen and (min-width: 1020px){
+
+        .resume-home{
+          display: none;
+        }
+
+        .resume-nav{
+          display: inline;
+        }
+
+        .carousel{
+          width: 70%;
+          margin: auto;
+        }
+
+      }
+
+      @media screen and (max-width: 1020px){
+        .image{
+          display:none;
+        }
+
+        .mobile-view{
+          display: grid;
+        }
+
+        .two{
+          height: auto;
+        }
+
+        .three{
+          height: auto;
+        }
+
+        .resume-nav{
+          display: none;
+        }
+
+        .resume-home{
+          display: inline;
+        }
+      }
