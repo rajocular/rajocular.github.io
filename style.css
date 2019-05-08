@@ -1,14 +1,16 @@
 body{
 		font-family: Roboto, Comic Sans MS;
-		/*background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background1.jpg");*/
-    background-color: black;
-	    background-attachment: fixed;
-	    background-position: center;
-	    background-repeat: no-repeat;
-	    background-size: cover;
+	/*background-image: url("https://s3.us-east-2.amazonaws.com/rajocular-static-files/ask-me/page-backgrounds/background1.jpg");*/
+  	background-color: black;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 
-	a{
+
+
+	/* a{
 		cursor: pointer;
 	}
 
@@ -46,7 +48,7 @@ body{
     .my-button:hover{
         box-shadow: 0 0 20px 0px  #FF0000;
       }
-	
+
   	.my-color{
   		background-color: red;
   	}
@@ -68,18 +70,18 @@ body{
         display: none;
     }
 
-    
+
 
 
 
 
     .project-image:hover{
-    		
+
     	-webkit-animation: pulsate-fwd 0.9s ease-in-out infinite both;
     	        animation: pulsate-fwd 0.9s ease-in-out infinite both;
     }
 
-    	
+
     	@-webkit-keyframes pulsate-fwd {
     	  0% {
     	    -webkit-transform: scale(1);
@@ -111,7 +113,7 @@ body{
 
 
 
-     
+
 
 	.arrow-bounce {
         color: #FF0000;
@@ -168,7 +170,7 @@ body{
         }
       }
 
-      
+
 
       @media screen and (min-width: 1020px){
 
@@ -211,4 +213,4 @@ body{
         .resume-home{
           display: inline;
         }
-      }
+      } */
